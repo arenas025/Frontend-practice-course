@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--I created a div which contains the elements to create a new password-->
+    <div class="login">
+        <div class="form-container">
+            <form action="/"class="form">
+                <img src="./Platzi_YardSale_Logos/logo_yard_sale.svg" alt="logo" class="logo">
+                <label for="email-addres" class="label">Email addres</label>
+                <input type="email" id="email-addres" placeholder="ejemplo@correo.com" class="input input-email">
+            
+                <label for="new-password" class="label">Password</label>
+                <input type="password" id="new-password" placeholder="********" class="input input-password">
+            
+            <!--Here, i created a button with input, it could be created as a input because is within a form, just have to change the type for submit-->
+                <input type="submit" value="Log in" class="primary-button login-button">
+            
+                <a href="#">Forgot my password</a>
+            
+            </form>
+            <button class="sign-up-button">Sign up</button>
+        </div>
+    </div>
+</body>
+</html>

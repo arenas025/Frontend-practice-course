@@ -1,0 +1,115 @@
+/*this are the variables that we gonna use after in the project*/
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md:16px;
+    --lg:18px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo{
+    width: 150px;
+    /*The margin bottom is to separate the logo fom the text*/
+    margin-bottom: 50px;
+    justify-self: center;
+    /*The display none is put because i don't want to it could be seen in desktop*/
+    display:none
+}
+
+
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input{
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 22px;
+    text-align:left;
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.form{
+    /*When flex is used, the content is put together side by side, so as we want to put it in a column, so change the direction*/
+    display: flex;
+    flex-direction: column;
+}
+
+.form a{
+    margin-bottom: 50px;
+    color: var(--hospital-green);
+    text-decoration: none;
+    align-self: center;
+    font-size: var(--sm);
+}
+.primary-button {
+    background-color: var(--hospital-green);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    /*this indicate that when we put the cursor on, will show a pointer, it could be changed with as we want*/
+    cursor:pointer;
+    font-size: var(--md);
+    height: 50px;
+    font-weight: bold;
+}
+
+.sign-up-button {
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid;
+    color: var(--hospital-green);
+    /*this indicate that when we put the cursor on, will show a pointer, it could be changed with as we want*/
+    cursor:pointer;
+    font-size: var(--md);
+    height: 50px;
+    font-weight: bold;
+    width: 300px;
+    top: 50px;
+}
+
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+/*Here apply the media querys to show the logo in some size*/
+@media (max-width: 640px){ 
+    .logo{
+        display: block;
+        align-self: center;
+    }
+    .sign-up-button{
+        margin-top: 50px;
+    }
+
+}
+
