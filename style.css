@@ -93,7 +93,7 @@ body{
     margin-bottom: 30px;
 }
 
-/*Here aply the media querys to show the logo in some size*/
+/*Here apply the media querys to show the logo in some size*/
 @media (max-width: 640px){ 
     .logo{
         display: block;
