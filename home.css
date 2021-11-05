@@ -1,0 +1,80 @@
+/*this are the variables that we gonna use after in the project*/
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md:16px;
+    --lg:18px;
+    --cardsize: 240px
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*here i put display grid to make the template*/
+.cards-container{
+    display: grid;
+    /*it allows to the cards have a 240px size*/
+    grid-template-columns: repeat(auto-fill, 240px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards-container img{
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*here i used the nth-child(1) because i want to edit just the first p)*/
+.product-details div p:nth-child(1){
+    color: black;
+    font-size: var(--lg);
+    font-weight: bold;
+}
+
+.product-details div p:nth-child(2){
+    color:var(--very-light-pink);
+}
+
+.figure{
+    margin: 0px;
+}
+.figure img{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.text p{
+    margin: 0px;
+}
+
+@media (max-width: 640px){
+    .cards-container{
+        grid-template-columns: repeat(auto-fill, 140px);
+        justify-content: center;
+    }
+    .cards-container img{
+        width: 140px;
+        height: 140px;
+    }
+    .figure img{
+        width: 30px;
+        height: 30px;
+    }
+}
